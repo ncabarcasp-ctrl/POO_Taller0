@@ -11,4 +11,8 @@ class Mascota {
 }
 
 public class Ejercicio9 {
+    public static void main(String[] args)
+    {
+        Mascota mascota = new Mascota(); 
+    }
 }
