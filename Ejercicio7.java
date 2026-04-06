@@ -11,6 +11,9 @@ class Vehiculo {
 }
 
 public class Ejercicio7 {
-
+    public static void main(String[] args) {
+        Vehiculo carro1 = new Vehiculo();
+        Vehiculo carro2 = new Vehiculo();
+    }
 }
     
