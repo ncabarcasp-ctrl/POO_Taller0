@@ -11,5 +11,9 @@ class Producto {
 }
 
 public class Ejercicio8 { 
-    
+    public static void main(String[] args) {
+        Producto producto1 = new Producto();
+        Producto producto2 = new Producto();
+        Producto producto3 = new Producto();
+    } 
 }
