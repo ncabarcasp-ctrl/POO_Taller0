@@ -16,19 +16,25 @@ class Vehiculo {
 
 public class Ejercicio11 {
     public static void main(String[] args) {
-        Vehiculo carro = new Vehiculo();
-        carro.marca = "Toyota";
-        carro.modelo = "Corolla";
-        carro.velocidadActual = 50;
+        Vehiculo carro1 = new Vehiculo();
+        Vehiculo carro2 = new Vehiculo();
+        carro1.marca = "Toyota";
+        carro1.modelo = "Corolla";
+        carro1.velocidadActual = 60;
+
+        carro2.marca = "Honda";
+        carro2.modelo = "Civic";
+        carro2.velocidadActual = 80;
 
         System.out.println("--- ANTES DE ACELERAR ---");
         
-        carro.mostrarEstado();
+        carro1.mostrarEstado();
 
-        carro.acelerar();
+        carro1.acelerar();
 
         System.out.println("--- DESPUÉS DE ACELERAR ---");
-        carro.mostrarEstado();
+        carro1.mostrarEstado();
+        carro2.mostrarEstado();
 
     }
 }
