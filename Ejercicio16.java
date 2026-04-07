@@ -24,4 +24,18 @@ void reabastecer (int cantidad) {
 
 }
 public class Ejercicio16 {
+    public static void main(String[] args) {
+        Producto producto1 = new Producto();
+        producto1.nombre = "Tablet";
+        producto1.precio = 299.99;
+        producto1.stock = 5;
+        System.out.println("INVENTARIO INICIAL:");
+        producto1.mostrarProducto();
+        System.out.println("\nLlego el camion: Resabasteciendo 15 tablets...");
+        producto1.reabastecer(15);
+        producto1.mostrarProducto();
+        System.out.println("\nIntentando reabastecer -5 tablets...");
+        producto1.reabastecer(-5);
+        producto1.mostrarProducto();
+    }
 }
