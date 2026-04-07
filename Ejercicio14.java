@@ -20,7 +20,7 @@ void retirar(double valor) {
     if (valor <= saldo) {
         saldo -= valor;
     } else {
-        System.out.println("Transacción fallida: Fondos insuficientes. Tiene saldo de $" + saldo + " + y trataste de retirar $" + valor);
+        System.out.println("Transacción fallida: Fondos insuficientes. Tiene saldo de $" + saldo + " y trataste de retirar $" + valor);
     }
 }
     }
@@ -41,6 +41,7 @@ void retirar(double valor) {
 
             // 2. Un retiro fallido por fondos insuficientes
             System.out.println("\nIntentando retirar $3000.00..."); // Esto da error: Fondos insuficientes. Tiene saldo de $2000.00 + y trataste de retirar $3000.00
+            cuenta2.retirar(3000.0);
             cuenta2.mostrarCuenta(); // Deberia mostrar un saldo de $2000.00 (sin cambios)
         }
     }
