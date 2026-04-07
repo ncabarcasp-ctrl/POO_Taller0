@@ -1,4 +1,4 @@
-class veehiculo {
+class Vehiculo {
     String marca;
     String modelo;
     int velocidadActual;
@@ -15,4 +15,20 @@ class veehiculo {
 }
 
 public class Ejercicio11 {
+    public static void main(String[] args) {
+        Vehiculo carro = new Vehiculo();
+        carro.marca = "Toyota";
+        carro.modelo = "Corolla";
+        carro.velocidadActual = 50;
+
+        System.out.println("--- ANTES DE ACELERAR ---");
+        
+        carro.mostrarEstado();
+
+        carro.acelerar();
+
+        System.out.println("--- DESPUÉS DE ACELERAR ---");
+        carro.mostrarEstado();
+
+    }
 }
