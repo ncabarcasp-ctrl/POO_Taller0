@@ -16,4 +16,29 @@ class Producto {
 }
 
 public class Ejercicio15 {
+    public static void main(String[] args) {
+        Producto producto1 = new Producto();
+        Producto producto2 = new Producto();
+        
+        producto1.nombre = "Laptop";
+        producto1.precio = 999.99;
+        producto1.stock = 10;
+
+        producto2.nombre = "Smartphone";
+        producto2.precio = 499.99;
+        producto2.stock = 20;
+
+        System.out.println("IVENTARIO INICIAL:");
+        producto1.mostrarProducto();
+        producto2.mostrarProducto();
+
+        System.out.println("\nVENDIENDO 3 Laptops...");
+        producto1.vender(3);
+
+        System.out.println("\nINTENTANDO VENDER 25 Smartphones...");
+        producto2.vender(25);
+        System.out.println("\nINVENTARIO FINAL:");
+        producto1.mostrarProducto();
+        producto2.mostrarProducto();
+    }
 }
