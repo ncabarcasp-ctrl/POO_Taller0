@@ -2,7 +2,7 @@ class Libro {
     String titulo;
     String autor;
 
-    public Libro(String titulo, String autor) {
+    public Libro() {
         System.out.println("Se ha creado un libro usando el constructor vacío");
 }
 void mostrarLibro() {
@@ -11,5 +11,11 @@ void mostrarLibro() {
 
 }
 public class Ejercicio23 {
-    
+    public static void main(String[] args) {
+        Libro miLibro = new Libro();
+        miLibro.titulo = "El Quijote";   
+        miLibro.autor = "Miguel de Cervantes";
+        
+        miLibro.mostrarLibro();
+    }
 }
