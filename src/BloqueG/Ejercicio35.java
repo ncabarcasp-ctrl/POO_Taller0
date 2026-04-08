@@ -22,5 +22,13 @@ class Lampara {
 
 public class Ejercicio35 {
     public static void main(String[] args) {
+        Lampara miLampara = new Lampara("Philips");
+        miLampara.mostrarEstado(); 
+
+        miLampara.encender();
+        miLampara.mostrarEstado();
+
+        miLampara.apagar();
+        miLampara.mostrarEstado();
     }
 }
