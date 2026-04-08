@@ -19,5 +19,13 @@ class Libro33 {
 
 public class Ejercicio33 {
     public static void main(String[] args) {
+        Libro33 libroOriginal = new Libro33("El principito", "Antoine de Saint-Exupéry");
+        Libro33 libroCopia = new Libro33(libroOriginal);
+
+        System.out.println("LIBRO ORIGINAL:");
+        libroOriginal.mostrarLibro();
+
+        System.out.println("LIBRO COPIA:");
+        libroCopia.mostrarLibro();
     }
 }
