@@ -13,7 +13,7 @@ class Celular {
         if (bateria > 0){
             prendido =true;
         } else {
-            System.out.println("No se puede encneder el " + marca + ". Bateria agotada.");
+            System.out.println("No se puede encender el " + marca + ". Bateria agotada.");
         }
     }
     public void apagar() {
@@ -27,7 +27,7 @@ class Celular {
     }
     public void usar(int minutos) {
         if (!prendido) {
-            System.out.println("Accion denegada: No se puedde usar el " + marca + " porque esta apagado");
+            System.out.println("Accion denegada: No se puede usar el " + marca + " porque esta apagado");
             return;
         }
         bateria = Math.max(0,bateria - minutos);
@@ -41,3 +41,16 @@ class Celular {
         System.out.println("Celular " + marca + " | Batería: " + bateria + "% | Estado: " + (prendido ? "ENCENDIDO" : "APAGADO"));
     }
 } 
+
+public class Ejercicio37 { 
+    public static void main(String[] args) {
+        Celular miPhone = new Celular("Iphone", 15);
+
+        miPhone.usar(10);
+        miPhone.encender();
+        miPhone.mostrarEstado();
+
+        miPhone.usar(20);
+        miPhone.mostrarEstado();
+    }
+}
