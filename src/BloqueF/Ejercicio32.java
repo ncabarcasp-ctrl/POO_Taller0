@@ -31,5 +31,10 @@ class Producto {
 
 public class Ejercicio32 {
     public static void main(String[] args) {
+        Producto productoA = Producto.crearProductoBasico("Auriculares Inalámbricos");
+        Producto productoB = Producto.crearProductoBasico("Cargador Rápido");
+
+        productoA.mostrarProducto();
+        productoB.mostrarProducto();
     }
 }
