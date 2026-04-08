@@ -30,6 +30,17 @@ class CuentaBancaria {
 
 public class Ejercicio27 {
     public static void main(String[] args) {
+        CuentaBancaria cuenta1 = new CuentaBancaria("123456789", "Natalia", 5000.0);
+        CuentaBancaria cuenta2 = new CuentaBancaria("987654321", "Karol G", 2500.0);
+
+        cuenta1.mostrarCuenta();
+        cuenta2.mostrarCuenta();
+
+        cuenta1.retirar(1000.0);
+        cuenta2.retirar(3000.0);
+
+        cuenta1.mostrarCuenta();
+        cuenta2.mostrarCuenta();
     }
         
 }
