@@ -15,9 +15,9 @@ void cerrar() {
 }
 void mostrarEstado() {
     if (abierta) {
-        System.out.println("La puera de " + material + " esta ABIERTA");
+        System.out.println("La puerta de " + material + " esta ABIERTA");
     } else {
-        System.out.println("La puerta de" + material + "esta CERRADA");
+        System.out.println("La puerta de " + material + " esta CERRADA ");
     
     }
  }
