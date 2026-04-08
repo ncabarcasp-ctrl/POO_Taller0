@@ -46,5 +46,20 @@ class Ventilador {
 
 public class Ejercicio38 {
     public static void main(String[] args) {
+        Ventilador miVent = new Ventilador("Samurai Pro");
+
+        miVent.subirVelocidad();
+        miVent.encender();
+        miVent.mostrarEstado();
+
+        miVent.subirVelocidad();
+        miVent.subirVelocidad();
+        miVent.subirVelocidad();
+
+        miVent.mostrarEstado();
+
+        miVent.apagar();
+        miVent.mostrarEstado();
+
     }
 }
