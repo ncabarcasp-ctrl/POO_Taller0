@@ -32,6 +32,12 @@ class CuentaBancaria {
 }
         public class Ejercicio28 {
             public static void main(String[] args) {
-                
+                CuentaBancaria cuenta1 = new CuentaBancaria("111222", "Ariana Grande", 5000.0);
+                CuentaBancaria cuenta2 = new CuentaBancaria("987654321", "Conan Gray", 2500.0);
+                CuentaBancaria cuenta3 = new CuentaBancaria("123456789", "Taylor Swift", 10000.0);
+
+                cuenta1.mostrarCuenta();
+                cuenta2.mostrarCuenta();
+                cuenta3.mostrarCuenta();
             }
         }
