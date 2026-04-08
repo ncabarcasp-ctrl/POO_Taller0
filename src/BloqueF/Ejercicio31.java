@@ -27,5 +27,13 @@ void mostrarProducto() {
 }
 public class Ejercicio31 {
     public static void main(String[] args) {
+       Producto p1 = new Producto("Smartphone", 499.99, 30);
+        
+        Producto pBasico = Producto.crearProductoBasico("Cable USB");
+        Producto pBasico2 = Producto.crearProductoBasico("Funda Protectora");
+
+        p1.mostrarProducto();
+        pBasico.mostrarProducto();
+        pBasico2.mostrarProducto();
     }
 }
