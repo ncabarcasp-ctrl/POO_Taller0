@@ -60,5 +60,11 @@
 
 public class Ejercicio61 {
     public static void main(String[] args) {
+        Docente miProfe = new Docente("Marie Curie", "Física y Química", 15, true);
+        
+        miProfe.mostrarPerfil();
+        miProfe.darClase();
+        miProfe.calificarExamen(4.5);
+        miProfe.calificarExamen(2.8);
     }
 }
