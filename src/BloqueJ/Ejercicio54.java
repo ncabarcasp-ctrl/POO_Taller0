@@ -1,4 +1,4 @@
-// Ejercicio 53: Crea una clase Reserva con: nombreCliente,fecha, activa. Agrega métodos para confirmar y cancelar
+// Ejercicio 54 Crea una clase Semaforo con color actual. Agrega método para cambiar entre rojo, amarillo y verde.
 
 class Semaforo {
     String color;
