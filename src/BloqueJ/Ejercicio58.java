@@ -24,5 +24,8 @@ class InventarioItem {
 
 public class Ejercicio58 {
     public static void main(String[] args) {
+        InventarioItem miItem = new InventarioItem("Teclado Mecánico", 50, 45.50);
+        
+        miItem.mostrarDetalle();
     }
 }
