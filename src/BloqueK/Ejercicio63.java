@@ -21,3 +21,44 @@
   // Dirección: "Centro Histórico"
   // Camas Disponibles: 0
   // Emergencia Abierta: false
+
+  class Hospital {
+    String nombre;
+    String direccion;
+    int camasDisponibles;
+    boolean emergenciaAbierta;
+
+    public Hospital(String nombre, String direccion, int camasDisponibles, boolean emergenciaAbierta) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.camasDisponibles = camasDisponibles;
+        this.emergenciaAbierta = emergenciaAbierta;
+    }
+
+    void ingresarPaciente() {
+        if (emergenciaAbierta && camasDisponibles > 0) {
+            camasDisponibles--;
+            System.out.println(" Paciente ingresado. Camas disponibles: " + camasDisponibles);
+        } else {
+            System.out.println(" Ingreso rechazado: Urgencias cerradas o sin camas.");
+        }
+    }
+
+    void darDeAlta() {
+        camasDisponibles++;
+        System.out.println(" Paciente dado de alta. Camas disponibles: " + camasDisponibles);
+    }
+
+    void mostrarEstado() {
+        System.out.println("--- REPORTE DEL HOSPITAL ---");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Dirección: " + direccion);
+        System.out.println("Camas Libres: " + camasDisponibles);
+        System.out.println("Urgencias: " + (emergenciaAbierta ? "Abiertas" : "Cerradas"));
+    }
+}
+
+public class Ejercicio63 {
+    public static void main(String[] args) {
+    }
+}
