@@ -24,5 +24,14 @@ class FacturaSimple {
 
 public class Ejercicio52 {
     public static void main(String[] args) {
-    }
+        
+        FacturaSimple miFactura = new FacturaSimple(1001, "Tech Solutions S.A.", 500.0);
+        
+        miFactura.mostrarResumen();
+        
+        miFactura.aplicarDescuento();
+        
+        miFactura.mostrarResumen();
+}
+
 }
