@@ -60,5 +60,15 @@
 
 public class Ejercicio63 {
     public static void main(String[] args) {
+        Hospital miHospital = new Hospital("Hospital de Bocagrande", "Cl. 5 #6-49, Cartagena", 2, true);
+        
+        miHospital.mostrarEstado();
+        
+        miHospital.ingresarPaciente();
+        miHospital.ingresarPaciente();
+        miHospital.ingresarPaciente(); 
+        
+        miHospital.darDeAlta();
+        miHospital.mostrarEstado();
     }
 }
