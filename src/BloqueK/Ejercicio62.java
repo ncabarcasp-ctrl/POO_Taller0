@@ -66,5 +66,15 @@
 
 public class Ejercicio62 {
     public static void main(String[] args) {
+        
+        Biblioteca miBiblio = new Biblioteca("Luis Ángel Arango", "Calle 11, Bogotá", 10, false);
+        
+        miBiblio.mostrarEstado();
+        miBiblio.prestarLibro(); // Debería fallar porque está cerrada
+        
+        miBiblio.abrir();
+        miBiblio.prestarLibro(); // Debería funcionar
+        
+        miBiblio.mostrarEstado();
     }
 }
