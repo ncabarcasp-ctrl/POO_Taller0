@@ -22,3 +22,49 @@
   // Dirección: "Barrio Getsemaní"
   // Dinero en Caja: 15000.0
   // Abierta: false
+
+  class Tienda {
+    String nombre;
+    String direccion;
+    double dineroEnCaja;
+    boolean abierta;
+
+    public Tienda(String nombre, String direccion, double dineroEnCaja, boolean abierta) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.dineroEnCaja = dineroEnCaja;
+        this.abierta = abierta;
+    }
+
+    void abrir() {
+        abierta = true;
+        System.out.println("🏪 " + nombre + " ha ABIERTO sus puertas.");
+    }
+
+    void cerrar() {
+        abierta = false;
+        System.out.println("🚪 " + nombre + " ha CERRADO por hoy.");
+    }
+
+    void vender(double monto) {
+        if (abierta) {
+            dineroEnCaja = dineroEnCaja + monto;
+            System.out.println(" Venta realizada por $" + monto + ". Nuevo saldo: $" + dineroEnCaja);
+        } else {
+            System.out.println(" Operación rechazada: La tienda está cerrada.");
+        }
+    }
+
+    void mostrarEstado() {
+        System.out.println("--- REPORTE DE TIENDA ---");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Dirección: " + direccion);
+        System.out.println("Dinero en caja: $" + dineroEnCaja);
+        System.out.println("Estado: " + (abierta ? "Abierta" : "Cerrada"));
+    }
+}
+
+public class Ejercicio64 {
+    public static void main(String[] args) {
+    }
+}
