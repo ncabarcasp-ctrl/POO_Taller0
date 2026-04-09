@@ -18,5 +18,8 @@ class Reloj {
 
 public class Ejercicio55 {
     public static void main(String[] args) {
+        Reloj miReloj = new Reloj(14, 30, 45);
+        
+        miReloj.mostrarHora();
     }
 }
