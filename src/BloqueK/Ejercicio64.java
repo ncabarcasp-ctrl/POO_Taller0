@@ -66,5 +66,17 @@
 
 public class Ejercicio64 {
     public static void main(String[] args) {
+        Tienda miTienda = new Tienda("Tienda Don Pepe", "Barrio Getsemaní", 15000.0, false);
+        
+        miTienda.mostrarEstado();
+        
+        miTienda.vender(5000.0);
+        
+        miTienda.abrir();
+        miTienda.vender(5000.0);
+        miTienda.vender(12500.0);
+        
+        miTienda.cerrar();
+        miTienda.mostrarEstado();
     }
 }
