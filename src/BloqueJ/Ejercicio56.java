@@ -16,5 +16,8 @@ class Temperatura {
 
 public class Ejercicio56 {
     public static void main(String[] args) {
+        Temperatura climaHoy = new Temperatura(28.5);
+        
+        climaHoy.mostrarConversion();
     }
 }
