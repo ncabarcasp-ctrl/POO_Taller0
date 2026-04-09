@@ -24,4 +24,41 @@
 
   // CODIGO:
 
-  
+  class Docente {
+    String nombre;
+    String asignatura;
+    int aniosExperiencia;
+    boolean activo;
+
+    public Docente(String nombre, String asignatura, int aniosExperiencia, boolean activo) {
+        this.nombre = nombre;
+        this.asignatura = asignatura;
+        this.aniosExperiencia = aniosExperiencia;
+        this.activo = activo;
+    }
+
+    void darClase() {
+        System.out.println("El/la docente " + nombre + " está impartiendo su clase de " + asignatura + ".");
+    }
+
+    void calificarExamen(double nota) {
+        if (nota >= 3.0) {
+            System.out.println("Calificación: " + nota + " -> ¡Aprobado!");
+        } else {
+            System.out.println("Calificación: " + nota + " -> Reprobado.");
+        }
+    }
+
+    void mostrarPerfil() {
+        System.out.println("--- PERFIL DOCENTE ---");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Asignatura: " + asignatura);
+        System.out.println("Experiencia: " + aniosExperiencia + " años");
+        System.out.println("¿Activo?: " + activo);
+    }
+}
+
+public class Ejercicio61 {
+    public static void main(String[] args) {
+    }
+}
