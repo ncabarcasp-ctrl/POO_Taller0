@@ -18,6 +18,10 @@ class Cancion {
 
 public class Ejercicio39 {
     public static void main(String[] args) {
-        
+        Cancion cancion1 = new Cancion("Bed Chem", "Sabrina Carpenter", 2.51);
+        Cancion cancion2 = new Cancion("Art Deco", "Lana Del Rey", 4.55);
+
+        cancion1.mostrarInfo();
+        cancion2.mostrarInfo();
     }
 }
