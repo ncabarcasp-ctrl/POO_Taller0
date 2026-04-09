@@ -22,3 +22,49 @@
   // Dirección: "Paseo de Recoletos, Madrid"
   // Cantidad de Libros: 120000
   // Abierta: false
+
+  class Biblioteca {
+    String nombre;
+    String direccion;
+    int cantidadLibros;
+    boolean abierta;
+
+    public Biblioteca(String nombre, String direccion, int cantidadLibros, boolean abierta) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.cantidadLibros = cantidadLibros;
+        this.abierta = abierta;
+    }
+
+    void abrir() {
+        abierta = true;
+        System.out.println(" La biblioteca " + nombre + " ahora está ABIERTA.");
+    }
+
+    void cerrar() {
+        abierta = false;
+        System.out.println(" La biblioteca " + nombre + " ahora está CERRADA.");
+    }
+
+    void prestarLibro() {
+        if (abierta && cantidadLibros > 0) {
+            cantidadLibros--;
+            System.out.println(" Libro prestado. Quedan: " + cantidadLibros);
+        } else {
+            System.out.println(" No se puede prestar (Cerrado o sin stock).");
+        }
+    }
+
+    void mostrarEstado() {
+        System.out.println("--- INFORMACIÓN ---");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Dirección: " + direccion);
+        System.out.println("Libros: " + cantidadLibros);
+        System.out.println("Estado: " + (abierta ? "Abierta" : "Cerrada"));
+    }
+}
+
+public class Ejercicio62 {
+    public static void main(String[] args) {
+    }
+}
