@@ -21,3 +21,40 @@
   // Estadio: "Metropolitano Roberto Meléndez"
   // Puntos: 15
   // En Primera División: true
+
+  class EquipoDeFutbol {
+    String nombre;
+    String estadio;
+    int puntos;
+    boolean enPrimeraDivision;
+
+    public EquipoDeFutbol(String nombre, String estadio, int puntos, boolean enPrimeraDivision) {
+        this.nombre = nombre;
+        this.estadio = estadio;
+        this.puntos = puntos;
+        this.enPrimeraDivision = enPrimeraDivision;
+    }
+
+    void ganarPartido() {
+        puntos = puntos + 3;
+        System.out.println("⚽ ¡GOLAZO! El " + nombre + " ha ganado el partido. (+3 puntos)");
+    }
+
+    void empatarPartido() {
+        puntos = puntos + 1;
+        System.out.println("⚖️ Partido muy reñido. El " + nombre + " ha empatado. (+1 punto)");
+    }
+
+    void mostrarEstadisticas() {
+        System.out.println("--- ESTADÍSTICAS DEL CLUB ---");
+        System.out.println("Equipo: " + nombre);
+        System.out.println("Estadio: " + estadio);
+        System.out.println("Puntos en el torneo: " + puntos);
+        System.out.println("Categoría: " + (enPrimeraDivision ? "Primera A" : "Primera B"));
+    }
+}
+
+public class Ejercicio65 {
+    public static void main(String[] args) {
+    }
+}
