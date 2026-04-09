@@ -32,5 +32,15 @@ class Reserva {
 
 public class Ejercicio53 {
     public static void main(String[] args) {
+
+        Reserva miReserva = new Reserva("Carlos Ruiz", "20/11/2026", false);
+        
+        miReserva.mostrarEstado();
+        
+        miReserva.confirmar();
+        miReserva.mostrarEstado();
+        
+        miReserva.cancelar();
+        miReserva.mostrarEstado();
     }
 }
