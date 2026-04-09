@@ -26,5 +26,8 @@ class Rectangulo {
 
 public class Ejercicio51 {
     public static void main(String[] args) {
+        Rectangulo miRectangulo = new Rectangulo(5.0, 3.0);
+        miRectangulo.mostrarResultados();
+
     }
 }
