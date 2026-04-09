@@ -56,5 +56,15 @@
 
 public class Ejercicio65 {
     public static void main(String[] args) {
+        
+        EquipoDeFutbol miEquipo = new EquipoDeFutbol("Real Cartagena", "Jaime Morón León", 0, false);
+        
+        miEquipo.mostrarEstadisticas();
+        
+        miEquipo.ganarPartido();
+        miEquipo.empatarPartido();
+        miEquipo.ganarPartido();
+        
+        miEquipo.mostrarEstadisticas();
     }
 }
