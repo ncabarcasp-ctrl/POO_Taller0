@@ -25,5 +25,8 @@ class NotaAcademica {
 
 public class Ejercicio57 {
     public static void main(String[] args) {
+        NotaAcademica misNotas = new NotaAcademica("Programación Orientada a Objetos", 4.0, 3.5, 4.5);
+        
+        misNotas.mostrarBoletin();
     }
 }
