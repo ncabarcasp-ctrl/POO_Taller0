@@ -26,5 +26,14 @@ class UsuarioSistema {
 
 public class Ejercicio59 {
     public static void main(String[] args) {
+        UsuarioSistema miUsuario = new UsuarioSistema("admin_juan", "SuperSecreta123", false);
+        
+        miUsuario.mostrarEstado();
+        
+        miUsuario.activar();
+        miUsuario.mostrarEstado();
+        
+        miUsuario.desactivar();
+        miUsuario.mostrarEstado();
     }
 }
