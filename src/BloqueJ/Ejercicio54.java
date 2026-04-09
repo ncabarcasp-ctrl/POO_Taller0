@@ -26,5 +26,17 @@ class Semaforo {
 
 public class Ejercicio54 {
     public static void main(String[] args) {
+        Semaforo miSemaforo = new Semaforo("Rojo");
+        
+        miSemaforo.mostrarEstado();
+        
+        miSemaforo.cambiarColor();
+        miSemaforo.mostrarEstado();
+        
+        miSemaforo.cambiarColor();
+        miSemaforo.mostrarEstado();
+        
+        miSemaforo.cambiarColor();
+        miSemaforo.mostrarEstado();
     }
 }
