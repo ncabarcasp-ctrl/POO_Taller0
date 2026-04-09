@@ -21,5 +21,13 @@ class Avion {
 
 public class Ejercicio60 {
     public static void main(String[] args) {
+        
+        Avion miVuelo = new Avion("Avianca", "Cartagena", 120);
+        
+        miVuelo.mostrarVuelo();
+        
+        miVuelo.abordar(35);
+        
+        miVuelo.mostrarVuelo();
     }
 }
