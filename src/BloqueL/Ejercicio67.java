@@ -24,3 +24,19 @@ class TareaUniversitaria {
         System.out.println("Estado: " + (entregada ? "Completada y Entregada" : "Pendiente"));
     }
 }
+
+public class Ejercicio67 {
+    public static void main(String[] args) {
+        TareaUniversitaria miProyecto = new TareaUniversitaria(
+            "POO",
+            "Resolver ejercicios prácticos de Java",
+            "14 de abril"
+        );
+        
+        miProyecto.mostrarTarea();
+        
+        miProyecto.marcarComoEntregada();
+        
+        miProyecto.mostrarTarea();
+    }
+}
