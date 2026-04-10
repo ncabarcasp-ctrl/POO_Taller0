@@ -34,7 +34,7 @@ class Comic {
     }
 
     void venderComic() {
-        
+
         if (stock > 0) {
             stock--;
             System.out.println("💥 ¡Pow! Cómic '" + titulo + "' vendido. Ingreso de $" + precio + " a caja. Stock restante: " + stock);
@@ -55,5 +55,17 @@ class Comic {
 public class Ejercicio68 {
     public static void main(String[] args) {
 
+       Comic comicBatman = new Comic("Batman: The Killing Joke", "DC Comics", 15.50, 2);
+        
+       Comic comicSpiderMan = new Comic("Spider-Man: Kraven's Last Hunt", "Marvel Comics", 12.00, 0);
+        
+        comicBatman.mostrarInfo();
+        comicSpiderMan.mostrarInfo();
+        
+        comicBatman.venderComic();
+        comicSpiderMan.venderComic(); 
+        
+        comicBatman.mostrarInfo();
+        comicSpiderMan.mostrarInfo();
     }
 }
