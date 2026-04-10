@@ -36,5 +36,16 @@ class EstudianteProgramacion {
 
 public class Ejercicio66 {
     public static void main(String[] args) {
+        EstudianteProgramacion yo = new EstudianteProgramacion("Natalia Desarrolladora", "Java", 65, false);
+        
+        yo.mostrarProgreso();
+        
+        yo.obtenerCertificado(); 
+        
+        yo.resolverEjercicio(); 
+        
+        yo.obtenerCertificado(); 
+        
+        yo.mostrarProgreso();
     }
 }
